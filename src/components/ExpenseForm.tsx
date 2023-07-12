@@ -1,6 +1,11 @@
 import React, { useState } from "react";
-import { Expense } from "./ExpenseTracker";
 
+type Expense = {
+  id: string;
+  description: string;
+  amount: number;
+  date: Date;
+};
 interface ExpenseFormProps {
   onAddExpense: (expense: Expense) => void;
 }

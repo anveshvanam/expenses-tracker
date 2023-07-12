@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import ExpenseForm from "./ExpenseForm";
 import ExpenseList from "./ExpenseList";
 
-interface Expense {
+type Expense = {
   id: string;
   description: string;
   amount: number;
   date: Date;
-}
+};
 
 const ExpenseTracker: React.FC = () => {
   const [expenses, setExpenses] = useState<Expense[]>([]);

@@ -1,5 +1,11 @@
 import React from "react";
-import { Expense } from "./ExpenseTracker";
+
+type Expense = {
+  id: string;
+  description: string;
+  amount: number;
+  date: Date;
+};
 
 interface ExpenseItemProps {
   expense: Expense;
