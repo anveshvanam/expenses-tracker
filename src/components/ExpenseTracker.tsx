@@ -60,7 +60,7 @@ const ExpenseTracker: React.FC = () => {
       ) : (
         <p>No expenses to display.</p>
       )}
-      <p className="mt-4">Total Expenses: ${totalExpenseAmount.toFixed(2)}</p>
+      <p className="mt-4">Total Expenses: Rs {totalExpenseAmount.toFixed(2)}</p>
     </div>
   );
 };
